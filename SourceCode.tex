@@ -1,0 +1,44 @@
+\documentclass{article}
+\setcounter{secnumdepth}{0}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0pt}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{fancyhdr}
+\usepackage{listings}
+
+
+% Define 
+\lstset{
+  % Define options for listings
+  language=Java,
+  % Show space characters.
+  showspaces=false,
+  % Show space characters in strings.
+  showstringspaces=false,
+  % Show tab characters.
+  showtabs=false,
+  % Break long lines that go off the page.
+  breaklines=true,
+  % Size of tabs.
+  tabsize=2,
+  % Place line numbers on left.
+  numbers=left,
+  % Place a frame around code.
+  frame=single,
+}
+\lhead{COSC 201} \rhead{Feynman Liang} \chead{February 20, 2012}
+\cfoot{\thepage}
+\pagestyle{fancy}
+
+\begin{document}
+\section{Insertion, Merge, and Quick Sort Implementations in Java}
+
+\lstinputlisting{algorithms.java}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
