@@ -1,9 +1,9 @@
-Comparison-Based Sorting Runtime Analysis
-==============================
-By: Feynman Liang <feynman.liang@gmail.com>
+# Comparison-Based Sorting Runtime Analysis
+
+By: Feynman Liang <feynman.liang@gmail.com>  
 Originally By: Lyle McGeoch, Amherst College
 
-# Directions
+## Directions
 java Sort <size of array to be sorted>
 ex. java Sort 500 (sorts an array of size 500 with insertion, merge,
 and quick sort)
@@ -12,17 +12,17 @@ In source, modify int multiple to time an algorithm looped multiple times
 (minimize timing imprecision). Set block to false to disable
 multi-loop timings.
 
-# Insertion Sort
+## Insertion Sort
 Insertion sort is implemented to insert in to the first [0..n]
 elements where all elements 0..n are sorted in non decreasing order
 and n is less than the array's length
 
-# Merge Sort
+## Merge Sort
 Merge sort is implemented bottom-up with in-place sorting. Partition
 size begins at one and merges to form arrays of two, then four,
 etc... until the partition size is greater than the array's length.
 
-# Quick Sort
+## Quick Sort
 Quick sort's implementation is recursive. It uses a median of three
 for arrays longer than 7 and selects the middle element in smaller
 arrays to use as the pivot. The array is then iterated over from both
@@ -31,7 +31,7 @@ are swapped with those smaller than the pivot on the right. Execution
 of the iterations terminate when the two indexes overlap, where after
 quick sort is called on the two partitioned sub-arrays.
 
-# Runtime Code
+## Runtime Code
 Runtime is measured by timing how long the algorithm takes to run as
 well as measuring the same algorithm looped a user defined multiple
 (int multiple) number of times.
